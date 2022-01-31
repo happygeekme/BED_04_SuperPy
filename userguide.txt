@@ -1,0 +1,101 @@
+Welkom to the userguide of SuperPy, the Supermarket inventory tool
+
+You can ad items to your inventory, sell items from your inventory 
+and create reports on expired products, revenue and profit.
+
+Please note
+dates should be given as YYYY-MM-DD
+
+
+# 1 ADD ITEMS TO YOUR INVENTORY 
+Use 'buy' as:
+python main.py buy [productname] [buy price] [expiration date]
+
+Example
+To to add an aubergine, bought for 0.50
+python main.py buy aubergine 0.50 2022-02-05
+The date the item is bought will automatically be set to todays date
+
+
+# 2 SELL ITEMS FOR YOUR INVENTORY
+
+Use 'sell' as:
+python main.py sell [productname] [sell price]
+The date of sale will automatically be sett to todays date
+
+Example
+To sell an aubergine for 1
+python main.py sell aubergine 1
+
+
+# CHECK FOR EXPIRED ITEMS ON SPECIFIED DATE
+
+For the EXPIRED function there are a few options to add a date:
+-now (for todays date)
+-yesterday (to use yesterdays date)
+-date (set a specific date as YYYY-MM-DD)
+-advance_time (set number of days in the future)
+
+Use 'expired' as:
+python main.py expired [-date option of choice]
+
+Examples:
+python main.py expired -now
+python main.py expired -yesterday
+python main.py expired -date 2022-01-27
+python main.py expired -advance_time 2 
+
+
+# CHECK WHAT IS IN STORE WITH INVENTORY
+
+For the INVENTORY function there are a few options to add a date:
+-now (for todays date)
+-yesterday (to use yesterdays date)
+-date (set a specific date as YYYY-MM-DD)
+
+Use 'inventory' as:
+python main.py inventory [-date option of choice]
+
+Examples
+python main.py inventory -now
+python main.py inventory -yesterday
+python main.py inventory -date 2022-01-27
+
+When the report is shown on the screen you have the option to save the report as a csv file.
+To save type 'y', if you don't want to save it type 'n'
+ 
+
+# REPORT REVENUE
+For the REVENUE function there are a few options to add a date:
+-now (for todays date)
+-yesterday (to use yesterdays date)
+-date (set a specific date as YYYY-MM-DD)
+
+Use 'revenue' as:
+python main.py revenue [-date option of choice]
+
+Examples
+python main.py revenue -now
+python main.py revenue -yesterday
+python main.py revenue -date 2022-01-27
+
+When the report is shown on the screen you have the option to save the report as a csv file.
+To save type 'y', if you don't want to save it type 'n'
+
+
+# REPORT PROFIT 
+For the PROFIT function there are a few options to add a date:
+-now (for todays date)
+-yesterday (to use yesterdays date)
+-date (set a specific date as YYYY-MM-DD)
+
+Use 'profit' as:
+python main.py profit [-date option of choice]
+
+Examples
+python main.py profit -now
+python main.py profit -yesterday
+python main.py profit -date 2022-01-27
+
+When the report is shown on the screen you have the option to save the report as a csv file.
+To save type 'y', if you don't want to save it type 'n'
