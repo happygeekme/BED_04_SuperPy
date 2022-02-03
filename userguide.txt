@@ -6,6 +6,11 @@ and create reports on expired products, revenue and profit.
 Please note
 dates should be given as YYYY-MM-DD
 
+You can set the date to today with:
+python main.py time_now
+
+You can set the date to a specified number of days in de future with:
+python main.py advance_time [number of days]
 
 # 1 ADD ITEMS TO YOUR INVENTORY 
 Use 'buy' as:
@@ -28,7 +33,7 @@ To sell an aubergine for 1
 python main.py sell aubergine 1
 
 
-# CHECK FOR EXPIRED ITEMS ON SPECIFIED DATE
+# 3 CHECK FOR EXPIRED ITEMS ON SPECIFIED DATE
 
 For the EXPIRED function there are a few options to add a date:
 -now (for todays date)
@@ -46,7 +51,7 @@ python main.py expired -date 2022-01-27
 python main.py expired -advance_time 2 
 
 
-# CHECK WHAT IS IN STORE WITH INVENTORY
+# 4 CHECK WHAT IS IN STORE WITH INVENTORY
 
 For the INVENTORY function there are a few options to add a date:
 -now (for todays date)
@@ -65,7 +70,7 @@ When the report is shown on the screen you have the option to save the report as
 To save type 'y', if you don't want to save it type 'n'
  
 
-# REPORT REVENUE
+# 5 REPORT REVENUE
 For the REVENUE function there are a few options to add a date:
 -now (for todays date)
 -yesterday (to use yesterdays date)
@@ -83,7 +88,7 @@ When the report is shown on the screen you have the option to save the report as
 To save type 'y', if you don't want to save it type 'n'
 
 
-# REPORT PROFIT 
+# 6 REPORT PROFIT 
 For the PROFIT function there are a few options to add a date:
 -now (for todays date)
 -yesterday (to use yesterdays date)
