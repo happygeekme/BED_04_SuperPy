@@ -1,4 +1,4 @@
-Welkom to the userguide of SuperPy, the Supermarket inventory tool
+Welcome to the userguide of SuperPy, the Supermarket inventory tool.
 
 You can ad items to your inventory, sell items from your inventory 
 and create reports on expired products, revenue and profit.
@@ -17,8 +17,8 @@ Use 'buy' as:
 python main.py buy [productname] [buy price] [expiration date]
 
 Example
-To to add an aubergine, bought for 0.50
-python main.py buy aubergine 0.50 2022-02-05
+To to add an eggplant, bought for 0.50
+python main.py buy eggplant 0.50 2022-02-05
 The date the item is bought will automatically be set to todays date
 
 
@@ -29,8 +29,8 @@ python main.py sell [productname] [sell price]
 The date of sale will automatically be sett to todays date
 
 Example
-To sell an aubergine for 1
-python main.py sell aubergine 1
+To sell an eggplant for 1 euro
+python main.py sell eggplant 1
 
 
 # 3 CHECK FOR EXPIRED ITEMS ON SPECIFIED DATE
